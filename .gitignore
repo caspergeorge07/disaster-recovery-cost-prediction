@@ -1,0 +1,33 @@
+```gitignore
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment files
+.env
+
+# Data
+data/raw/
+data/interim/
+data/processed/
+
+# Models
+models/trained/
+models/artifacts/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
