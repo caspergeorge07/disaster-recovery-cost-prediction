@@ -327,6 +327,11 @@ def build_processed_dataset() -> pd.DataFrame:
     df = engineer_geographic_feature(df)
     df = engineer_historical_frequency(df)
     df = engineer_risk_flag(df)
+    
+    df["incidentType"] = df["incidentType"].fillna("Unknown")
+    df["incident_duration_days"] = df["incident_duration_days"].fillna(0)
+
+    # Target transformation
     df = add_log_target(df)
 
     # Fill project aggregates if missing
