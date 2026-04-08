@@ -1,0 +1,15 @@
+dataset,column,dtype,rows,null_count,null_rate_pct,unique_count,sample_values,min_value,max_value
+FemaWebDisasterSummaries,disasterNumber,int64,200,0,0.0,200,"3601, 3602, 1981, 1802, 4317",1255.0,5614.0
+FemaWebDisasterSummaries,totalNumberIaApproved,float64,200,186,93.0,14,"7469.0, 1978.0, 2059.0, 8340.0, 25401.0",164.0,25401.0
+FemaWebDisasterSummaries,totalAmountIhpApproved,float64,200,186,93.0,14,"95754618.67, 12527583.31, 9506708.04, 57084521.73, 103504091.89",549480.66,103504091.89
+FemaWebDisasterSummaries,totalAmountHaApproved,float64,200,188,94.0,12,"93631947.01, 10311780.12, 8474203.73, 93779140.15, 6200742.72",447761.87,93779140.15
+FemaWebDisasterSummaries,totalAmountOnaApproved,float64,200,186,93.0,14,"2122671.66, 2215803.19, 1032504.31, 57084521.73, 9724951.74",101718.79,57084521.73
+FemaWebDisasterSummaries,totalObligatedAmountPa,float64,200,37,18.5,163,"224355761.7, 18812748.86, 77319838.79, 298105794.06, 4507774.54",154.0,4732560097.4
+FemaWebDisasterSummaries,totalObligatedAmountCatAb,float64,200,49,24.5,151,"94967791.86, 13423088.38, 11526563.99, 143602692.89, 1401615.75",154.0,2178073466.68
+FemaWebDisasterSummaries,totalObligatedAmountCatC2g,float64,200,118,59.0,82,"119773860.39, 4869890.36, 64379774.1, 150485207.39, 3106158.79",0.0,240887893.45
+FemaWebDisasterSummaries,paLoadDate,object,200,37,18.5,2,"2026-02-06T00:00:00.000Z, 2026-02-06T00:00:00.000Z, 2026-04-05T00:00:00.000Z, 2026-02-06T00:00:00.000Z, 2026-02-06T00:00:00.000Z",,
+FemaWebDisasterSummaries,iaLoadDate,object,200,186,93.0,1,"2026-04-05T00:00:00.000Z, 2026-04-05T00:00:00.000Z, 2026-04-05T00:00:00.000Z, 2026-04-05T00:00:00.000Z, 2026-04-05T00:00:00.000Z",,
+FemaWebDisasterSummaries,totalObligatedAmountHmgp,float64,200,41,20.5,107,"71549737.0, 2710679.0, 17801245.73, 67665966.0, 844215.0",0.0,264635280.0
+FemaWebDisasterSummaries,hash,object,200,0,0.0,200,"3de68baba960e69da445cf822d3dd859081fb34a, 58566c446fce5cabbd0c3412a6bb3daa4ada1993, 24cc4ca4c5602ae7f9ed7a94ff2ad08b28789674, d5b8865b047c2db34bae425a847682fc5c952d47, a37f2cacbd2f2184de5465c2148b1a228e4be246",,
+FemaWebDisasterSummaries,lastRefresh,object,200,0,0.0,25,"2023-10-09T23:02:26.341Z, 2023-10-09T23:02:26.341Z, 2026-04-05T06:02:19.627Z, 2026-02-06T02:02:06.586Z, 2026-04-05T06:02:19.627Z",,
+FemaWebDisasterSummaries,id,object,200,0,0.0,200,"faafecca-0f76-4fb8-8ffd-b6f46f3b712c, b74f0dc2-fab5-42b9-acf7-c94df14d85ad, ecb4804b-cfde-4437-93b5-1334c1815fee, b3ae5013-d6cc-46f3-a692-18191be44083, c3af2a42-752e-427c-a9ae-6b6cefa31b22",,

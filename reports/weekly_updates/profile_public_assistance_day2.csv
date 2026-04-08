@@ -1,0 +1,26 @@
+dataset,column,dtype,rows,null_count,null_rate_pct,unique_count,sample_values,min_value,max_value
+PublicAssistanceFundedProjectsDetails,disasterNumber,int64,200,0,0.0,24,"1239, 1239, 1239, 1239, 1239",1239.0,3543.0
+PublicAssistanceFundedProjectsDetails,declarationDate,object,200,0,0.0,14,"1998-08-26T00:00:00.000Z, 1998-08-26T00:00:00.000Z, 1998-08-26T00:00:00.000Z, 1998-08-26T00:00:00.000Z, 1998-08-26T00:00:00.000Z",,
+PublicAssistanceFundedProjectsDetails,incidentType,object,200,0,0.0,5,"Severe Storm(s), Severe Storm(s), Severe Storm(s), Severe Storm(s), Severe Storm(s)",,
+PublicAssistanceFundedProjectsDetails,pwNumber,int64,200,0,0.0,100,"1, 5, 7, 8, 10",1.0,15802.0
+PublicAssistanceFundedProjectsDetails,applicationTitle,object,200,0,0.0,185,"(PW# 1) IMMEDIATE NEEDS FUNDING, (PW# 5) Not Provided, (PW# 7) Not Provided, (PW# 8) Not Provided, (PW# 10) Not Provided",,
+PublicAssistanceFundedProjectsDetails,applicantId,object,200,0,0.0,111,"465-19792-00, 465-19792-00, 465-19792-00, 465-19792-00, 465-19792-00",,
+PublicAssistanceFundedProjectsDetails,damageCategoryCode,object,200,0,0.0,7,"B, G, G, G, G",,
+PublicAssistanceFundedProjectsDetails,damageCategoryDescrip,object,200,0,0.0,8,"Emergency Protective Measures, Parks, Recreational Facilities, and Other Items, Parks, Recreational Facilities, and Other Items, Parks, Recreational Facilities, and Other Items, Parks, Recreational Facilities, and Other Items",,
+PublicAssistanceFundedProjectsDetails,projectStatus,object,200,0,0.0,2,"Active, Active, Active, Active, Active",,
+PublicAssistanceFundedProjectsDetails,projectProcessStep,object,200,0,0.0,3,"Project Closed Out, Project Closed Out, Project Closed Out, Project Closed Out, Project Closed Out",,
+PublicAssistanceFundedProjectsDetails,projectSize,object,200,0,0.0,2,"Large, Large, Large, Large, Large",,
+PublicAssistanceFundedProjectsDetails,county,object,200,10,5.0,57,"Val Verde County, Val Verde County, Val Verde County, Val Verde County, Val Verde County",,
+PublicAssistanceFundedProjectsDetails,countyCode,object,200,0,0.0,63,"465, 465, 465, 465, 465",,
+PublicAssistanceFundedProjectsDetails,stateAbbreviation,object,200,0,0.0,14,"TX, TX, TX, TX, TX",,
+PublicAssistanceFundedProjectsDetails,stateNumberCode,object,200,0,0.0,14,"48, 48, 48, 48, 48",,
+PublicAssistanceFundedProjectsDetails,projectAmount,float64,200,0,0.0,200,"100000.0, 19685.5, 26111.0, 26250.83, 34502.5",211.54,34649688.73
+PublicAssistanceFundedProjectsDetails,federalShareObligated,float64,200,0,0.0,200,"75000.0, 14764.13, 19583.25, 19688.12, 25876.88",211.54,31184719.88
+PublicAssistanceFundedProjectsDetails,totalObligated,float64,200,0,0.0,200,"80340.0, 15461.0, 20507.58, 20617.4, 27098.27",211.54,31184719.88
+PublicAssistanceFundedProjectsDetails,lastObligationDate,object,200,0,0.0,156,"1998-09-15T14:25:07.000Z, 1998-09-23T08:58:52.000Z, 1998-09-23T08:58:52.000Z, 1998-09-28T15:02:18.000Z, 1998-09-28T15:02:18.000Z",,
+PublicAssistanceFundedProjectsDetails,firstObligationDate,object,200,0,0.0,131,"1998-09-15T14:25:07.000Z, 1998-09-23T08:58:52.000Z, 1998-09-23T08:58:52.000Z, 1998-09-28T15:02:18.000Z, 1998-09-28T15:02:18.000Z",,
+PublicAssistanceFundedProjectsDetails,mitigationAmount,int64,200,0,0.0,1,"0, 0, 0, 0, 0",0.0,0.0
+PublicAssistanceFundedProjectsDetails,gmProjectId,int64,200,0,0.0,200,"1021769, 1062596, 1062598, 1062599, 1062578",13043.0,1062599.0
+PublicAssistanceFundedProjectsDetails,gmApplicantId,int64,200,0,0.0,124,"268458, 268458, 268458, 268458, 268458",3777.0,268460.0
+PublicAssistanceFundedProjectsDetails,lastRefresh,object,200,0,0.0,6,"2025-11-27T15:05:59.253Z, 2025-11-27T15:05:59.253Z, 2025-11-27T15:05:59.253Z, 2025-11-27T15:05:59.253Z, 2025-11-27T15:05:59.253Z",,
+PublicAssistanceFundedProjectsDetails,hash,object,200,0,0.0,200,"addcfded82ae348f46ff034a4564f983a9dea897, 05c6c522b930a9c38b52a0c4b0de853e98b4cb75, 0addbfed02721821348612482bfe36d8fe587d0f, d01abd86d6129cc818c5cee0f9373e3097c245e6, ae1b100b0fe6a9fd0a75c120e0ca3a5e4be6d356",,
