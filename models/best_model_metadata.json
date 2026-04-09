@@ -1,0 +1,56 @@
+{
+  "best_model_name": "random_forest",
+  "target_column": "log_total_obligated_amount",
+  "numeric_features": [
+    "declaration_year",
+    "declaration_month",
+    "incident_duration_days",
+    "state_5yr_disaster_count",
+    "high_cost_incident",
+    "fyDeclared",
+    "tribalRequest",
+    "fipsStateCode",
+    "fipsCountyCode",
+    "placeCode",
+    "region"
+  ],
+  "categorical_features": [
+    "state",
+    "incidentType",
+    "declarationType",
+    "season",
+    "census_region"
+  ],
+  "n_rows": 5163,
+  "n_columns": 16,
+  "model_output_path": "C:\\Users\\caspe\\OneDrive\\Documents\\disaster-recovery-cost-prediction\\models\\best_model.pkl",
+  "cv_results": [
+    {
+      "model_name": "random_forest",
+      "mean_cv_r2": 0.8566362564043818,
+      "std_cv_r2": 0.020837325626489885,
+      "mean_cv_rmse": 3.361276487765913,
+      "std_cv_rmse": 0.24495627182908017,
+      "mean_cv_mae": 1.3342345240257933,
+      "std_cv_mae": 0.0759046108039574
+    },
+    {
+      "model_name": "xgboost",
+      "mean_cv_r2": 0.8324520042566336,
+      "std_cv_r2": 0.01983523499052977,
+      "mean_cv_rmse": 3.6378210323106543,
+      "std_cv_rmse": 0.19793926661635,
+      "mean_cv_mae": 1.6451945431344892,
+      "std_cv_mae": 0.06294899697091355
+    },
+    {
+      "model_name": "linear_regression",
+      "mean_cv_r2": 0.6160239393059338,
+      "std_cv_r2": 0.01405845224559241,
+      "mean_cv_rmse": 5.517634593597617,
+      "std_cv_rmse": 0.08314593268284586,
+      "mean_cv_mae": 4.203186299001245,
+      "std_cv_mae": 0.08980418496903812
+    }
+  ]
+}

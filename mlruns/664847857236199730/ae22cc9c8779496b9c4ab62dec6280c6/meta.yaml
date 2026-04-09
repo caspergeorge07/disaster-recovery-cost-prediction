@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/caspe/OneDrive/Documents/disaster-recovery-cost-prediction/mlruns/664847857236199730/ae22cc9c8779496b9c4ab62dec6280c6/artifacts
+end_time: 1775714010376
+entry_point_name: ''
+experiment_id: '664847857236199730'
+lifecycle_stage: active
+run_id: ae22cc9c8779496b9c4ab62dec6280c6
+run_name: random_forest
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1775714010330
+status: 3
+tags: []
+user_id: caspe

@@ -331,6 +331,76 @@ def build_processed_dataset() -> pd.DataFrame:
     df["incidentType"] = df["incidentType"].fillna("Unknown")
     df["incident_duration_days"] = df["incident_duration_days"].fillna(0)
 
+    # -----------------------------------------------------------------------------
+    # Final aggregation to disaster level (1 row per disaster)
+    # -----------------------------------------------------------------------------
+    logger.info("Aggregating final dataset to one row per disaster...")
+
+    aggregation_dict = {
+        # Core identifiers / categories
+        "state": "first",
+        "incidentType": "first",
+        "declarationType": "first",
+        "season": "first",
+        "census_region": "first",
+
+        # Dates / temporal engineered fields
+        "declarationDate": "first",
+        "incidentBeginDate": "first",
+        "incidentEndDate": "first",
+        "declaration_year": "first",
+        "declaration_month": "first",
+    
+        # Numeric engineered features
+        "incident_duration_days": "max",
+        "state_5yr_disaster_count": "max",
+    
+        # Flags / codes
+        "high_cost_incident": "max",
+        "fyDeclared": "max",
+        "ihProgramDeclared": "max",
+        "iaProgramDeclared": "max",
+        "paProgramDeclared": "max",
+        "hmProgramDeclared": "max",
+        "tribalRequest": "max",
+    
+        "fipsStateCode": "first",
+        "fipsCountyCode": "first",
+        "placeCode": "first",
+        "declarationRequestNumber": "first",
+        "incidentId": "first",
+        "region": "first",
+    
+        # Text / reference columns
+        "femaDeclarationString": "first",
+        "declarationTitle": "first",
+        "disasterCloseoutDate": "first",
+        "designatedArea": "first",
+        "lastIAFilingDate": "first",
+        "designatedIncidentTypes": "first",
+        "lastRefresh": "first",
+        "hash": "first",
+        "id": "first",
+    
+        # Public Assistance aggregates
+        "project_count": "sum",
+        "avg_project_amount": "mean",
+        "total_obligated_amount": "sum",
+    
+        # FEMA web summary columns
+        "totalObligatedAmountPa": "max",
+        "totalObligatedAmountCatAb": "max",
+        "totalObligatedAmountCatC2g": "max",
+        "totalObligatedAmountHmgp": "max",
+    }
+
+    # Keep only columns that actually exist in df
+    aggregation_dict = {col: agg for col, agg in aggregation_dict.items() if col in df.columns}
+    
+    df = df.groupby("disasterNumber", as_index=False).agg(aggregation_dict)
+    
+    logger.info("After final disaster-level aggregation | shape=%s", df.shape)
+
     # Target transformation
     df = add_log_target(df)
 

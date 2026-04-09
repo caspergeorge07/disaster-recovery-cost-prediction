@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/caspe/OneDrive/Documents/disaster-recovery-cost-prediction/mlruns/664847857236199730/9e94afa096cd4804b36444bdd8082764/artifacts
+end_time: 1775717083949
+entry_point_name: ''
+experiment_id: '664847857236199730'
+lifecycle_stage: active
+run_id: 9e94afa096cd4804b36444bdd8082764
+run_name: xgboost
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1775717083863
+status: 3
+tags: []
+user_id: caspe
