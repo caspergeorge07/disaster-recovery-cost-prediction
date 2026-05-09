@@ -494,6 +494,8 @@ Potential future enhancements include:
 
 # Author
 
+**Ndubuaku Casper Ekwueme**
+
 Developed as part of an internship project on:
 
 **Disaster Recovery Cost Prediction and Resilience Optimization**
