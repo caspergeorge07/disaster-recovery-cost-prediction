@@ -1,6 +1,7 @@
 from pathlib import Path
 from typing import Dict
 
+import os
 import requests
 import streamlit as st
 import plotly.graph_objects as go
@@ -19,7 +20,7 @@ st.set_page_config(
 # -----------------------------------------------------------------------------
 # Constants
 # -----------------------------------------------------------------------------
-API_BASE_URL = "http://127.0.0.1:8000"
+API_BASE_URL = os.getenv("API_BASE_URL", "http://127.0.0.1:8000")
 PREDICT_ENDPOINT = f"{API_BASE_URL}/predict-cost"
 HEALTH_ENDPOINT = f"{API_BASE_URL}/health"
 MODEL_INFO_ENDPOINT = f"{API_BASE_URL}/model-info"
