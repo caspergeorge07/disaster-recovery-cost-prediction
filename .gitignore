@@ -1,20 +1,18 @@
-```gitignore
-# Python
+# Environment variables
+.env
+
+# Python cache
 __pycache__/
 *.pyc
 *.pyo
 *.pyd
 
-# Virtual environments
-.venv/
-env/
-venv/
-
-# Jupyter
+# Test/cache artifacts
+.pytest_cache/
 .ipynb_checkpoints/
 
-# Environment files
-.env
+# MLflow
+mlruns/
 
 # Data
 data/raw/
@@ -25,9 +23,22 @@ data/processed/
 models/trained/
 models/artifacts/
 
-# VS Code
-.vscode/
+
+# Model artifacts
+*.pkl
+models/*.pkl
 
 # OS files
 .DS_Store
 Thumbs.db
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Local virtual environments
+venv/
+.venv/
+env/mlruns/ 
